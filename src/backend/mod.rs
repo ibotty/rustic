@@ -17,6 +17,7 @@ pub mod local;
 pub mod node;
 pub mod rclone;
 pub mod rest;
+pub mod s3;
 pub mod stdin;
 
 pub use self::ignore::*;
@@ -29,6 +30,7 @@ pub use local::*;
 use node::Node;
 pub use rclone::*;
 pub use rest::*;
+pub use self::s3::*;
 pub use stdin::*;
 
 /// All [`FileType`]s which are located in separated directories
